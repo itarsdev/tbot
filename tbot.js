@@ -9,7 +9,7 @@ bot.start((ctx) => {
     const urlSent = `${WEB_LINK}?start=${startPayload}`;   
     const user = ctx.message.from;
     const userName = user.username ? `@${user.username}` : user.first_name;
-    ctx.replyWithMarkdown(`*Hey, ${userName}! Welcome to EblanTap!*`, {
+    ctx.replyWithMarkdown(`*Hey, ${userName}! Welcome to tBot!*`, {
         reply_markup: {
             inline_keyboard: [
                 [{ text: "👋 Start now!", web_app: { url: urlSent } }]

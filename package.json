@@ -1,0 +1,12 @@
+{
+  "name": "tbot",
+  "version": "1.0.0",
+  "main": "tbot.js",
+  "scripts": {
+    "tbot": "node tbot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
