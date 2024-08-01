@@ -9,15 +9,15 @@ const WEB_LINK = "https://tma-react-front.vercel.app";
 
 bot.start((ctx) => {
     const user = ctx.message.from;
-    const userName = user.username ? `@${user.username}` : user.first_name; 
+    const userName = user.username ? user.first_name : `@${user.username}`; 
 
-    ctx.replyWithMarkdownV2(`*Hey, ${userName}✌ \n\nWelcome to Catacombs\\!*\n\nA whole world of adventures is available to you\\.\nDon't forget to invite your friends\\, the path to success will be faster in a team\\.\n\nThe adventure begins 🚀`, {
+    ctx.replyWithMarkdownV2(`*Привет, ${userName}*✌ \n\nДобро пожаловать в *Catacombs\\!*\n\nДля тебя открывается целый мир приключений, проходи заданя, повышай уровень и зарабатывай как можно больше\\.\n\nРассскажи всем друзьям, приглашай их\\, путь к успеху в команде намного быстрее\\.\n\nПриключение начинается 🚀`, {
         reply_markup: {
             inline_keyboard: [
-                [{ text: "✨ Visit website", web_app: {url: WEB_LINK} }],
-                [{ text: "✅ Subscribe channel", web_app: {url: WEB_LINK} }],
-                [{ text: "❓ Help", web_app: {url: WEB_LINK} }],
-                [{ text: "👋 Start now", web_app: {url: WEB_LINK} }]
+                [{ text: "✨ Посетить сайт", web_app: {url: WEB_LINK} }],
+                [{ text: "✅ Подписаться на официальный канал", web_app: {url: WEB_LINK} }],
+                [{ text: "❓ Как играть?", web_app: {url: WEB_LINK} }],
+                [{ text: "💪 Вход в катакомбы", web_app: {url: WEB_LINK} }]
             ],
         },
     });
