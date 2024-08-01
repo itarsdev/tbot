@@ -5,7 +5,8 @@ const { Telegraf } = require('telegraf');
 const { BOT_TOKEN } = process.env;
 const bot = new Telegraf(BOT_TOKEN);
 
-const WEB_LINK = "https://tma-react-front.vercel.app";
+const WEB_LINK = "https://dev.itars.ru";
+const GAME_LINK = "https://tma-react-front.vercel.app";
 
 bot.start((ctx) => {
     const user = ctx.message.from;
@@ -17,7 +18,7 @@ bot.start((ctx) => {
                 [{ text: "✨ Посетить сайт", web_app: {url: WEB_LINK} }],
                 [{ text: "✅ Подписаться на официальный канал", web_app: {url: WEB_LINK} }],
                 [{ text: "❓ Как играть?", web_app: {url: WEB_LINK} }],
-                [{ text: "💪 Вход в катакомбы", web_app: {url: WEB_LINK} }]
+                [{ text: "💪 Вход в катакомбы", web_app: {url: GAME_LINK} }]
             ],
         },
     });
